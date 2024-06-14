@@ -79,7 +79,7 @@ const [task, setTask] = useState('');
   return (
     <div>
       <div id={styles.FirstDiv}>
-        <h1 id={styles.LogoText}>Abdulaxad Blog</h1>
+        <h1 id={styles.LogoText}>Blog's</h1>
         <div id={styles.IconDiv}>
         <Link id={styles.LinkColor} href={"../pages/explore"}>
           <MdExplore id={styles.ExploreIcon} />
