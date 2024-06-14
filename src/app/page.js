@@ -94,7 +94,7 @@ const [task, setTask] = useState('');
         </div>
       </div>
       <div id={styles.MainText}>
-        <h1>What I am thinking about?</h1>
+        <h1>What are you thinking about?</h1>
         <form onSubmit={inputSubmit} id={styles.InputForm}       >
           <input id={styles.MainInput}  value={task} onChange={inputChange} onKeyPress={handleKeyPress} placeholder="Write here"></input>
           <button id={styles.UploadButton}>Upload</button>
@@ -102,7 +102,7 @@ const [task, setTask] = useState('');
         <div id={styles.CardBox}>
         {tasksArray.map((task, index) => (
           <div id={styles.CardDiv} key={index}>
-            <h1 id={styles.CardName}>Abdulaxad Xadjimetov</h1>
+            <h1 id={styles.CardName}>You</h1>
             <h1 id={styles.CardValue}>{task}</h1>
             <h3 id={styles.CardDayTime}>{currentDay}, {currentTime}</h3>
           </div>
