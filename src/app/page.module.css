@@ -44,6 +44,7 @@
 #CardDiv{
     width: 50%;
     padding: 2dvh;
+    word-break: break-all;
     border: solid 1px black;
     border-radius: 15px;
     margin-left: 50vh;
@@ -59,6 +60,7 @@
     text-align: left;
 }
 #CardValue{
+    
     font-size: xx-large;
     text-align: left;
     margin-top: 3vh;
@@ -84,4 +86,10 @@
 }
 #LinkColor{
     color: black;
+}
+#save{
+    text-align: center;
+    color: gray;
+    font-size: small;
+    margin-top: 2vh;
 }
