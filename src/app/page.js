@@ -26,7 +26,7 @@ const [task, setTask] = useState('');
     }
   };
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter'&& task.trim()) {
       // const newTask = `${task.length + 1}`;
       setTasksArray([task, ...tasksArray]);
       setTask('');
@@ -66,7 +66,7 @@ const [task, setTask] = useState('');
         <div id={styles.CardBox}>
         {tasksArray.map((task, index) => (
           <div id={styles.CardDiv} key={index}>
-            <h1 id={styles.CardName}>You blog</h1>
+            <h1 id={styles.CardName}>Your blog:</h1>
             <h1 id={styles.CardValue}>{task}</h1>
             <h3 id={styles.CardDayTime}>{currentDay}, {currentTime}</h3>
           </div>
