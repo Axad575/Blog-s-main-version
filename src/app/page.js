@@ -7,6 +7,7 @@ import { MdQueueMusic } from "react-icons/md";
 import { MdExplore } from "react-icons/md";
 import { MdSearch } from "react-icons/md";
 import { useState, useEffect } from 'react';
+import { IoDocumentAttachOutline } from "react-icons/io5";
 
 export default function Home() {
   
@@ -53,13 +54,19 @@ const [task, setTask] = useState('');
   return (
     <div>
       <div id={styles.FirstDiv}>
-        <h1 id={styles.LogoText}>Blog's</h1>
-        
+        <div>
+          <h1 id={styles.LogoText}>Blog's</h1>
+          <p id={styles.beta}>Beta</p>
+        </div>
+        <div>
+          
+        </div>
       </div>
       <div id={styles.MainText}>
         <h1>What are you thinking about?</h1>
         <form onSubmit={inputSubmit} id={styles.InputForm}       >
           <input id={styles.MainInput}  value={task} onChange={inputChange} onKeyPress={handleKeyPress} placeholder="Write here"></input>
+          <button id={styles.AttachButton}><IoDocumentAttachOutline /></button>
           <button id={styles.UploadButton}>Upload</button>
         </form>
         <p id={styles.save}>They won't save in our service</p>

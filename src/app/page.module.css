@@ -21,9 +21,15 @@
     margin-left: 10vh;
     margin-top: 15vh;
 }
-#FirstDiv{
-    display: flex;
-    justify-content: space-between;
+#beta{
+    width: fit-content;
+    height: auto;
+    padding: 1vh;
+    margin-top: 0.5vh;
+    margin-left: 10vh;
+    border-radius: 5px;
+    color: gray;
+    border: solid 1px gray;
 }
 #IconDiv{
     width: 25%;
@@ -84,6 +90,17 @@
     margin-left: 2vh;
     border-radius: 15px;
     background-color: white;
+}
+#AttachButton{
+    height: auto;
+    font-size: 3vh;
+    padding: 2vh;
+    margin-left: 2vh;
+    border-radius: 15px;
+    background-color: white;
+}
+#AttachIcon{
+    font-size: 3vh;
 }
 #LinkColor{
     color: black;
