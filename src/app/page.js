@@ -8,9 +8,14 @@ import { MdAttachMoney } from "react-icons/md";
 import { MdOutlineManageSearch } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import { IoDocumentAttachOutline } from "react-icons/io5";
+import { MdWorkOutline } from "react-icons/md";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 
 export default function Home() {
+  const attachClick =()=>{
+    alert("It isn't available now")
+  }
+
   
 const [task, setTask] = useState('');
   const [tasksArray, setTasksArray] = useState([]);
@@ -60,18 +65,19 @@ const [task, setTask] = useState('');
           <p id={styles.beta}>Beta</p>
         </div>
         <div>
-          <MdOutlineManageSearch id={styles.SearchIcon}/>
-          <MdAccountCircle id={styles.AccountIcon}/>
-          <MdLibraryMusic id={styles.MusicIcon}/>
-          <MdAttachMoney id={styles.MoneyIcon}/>
-          <IoMdInformationCircleOutline id={styles.InformationIcon}/>
+          <MdOutlineManageSearch title="Search" id={styles.SearchIcon}/>
+          <MdAccountCircle title="Account" id={styles.AccountIcon}/>
+          <MdLibraryMusic title="Music" id={styles.MusicIcon}/>
+          <MdAttachMoney title="Donate to us" id={styles.MoneyIcon}/>
+          <MdWorkOutline title="Work with us" id={styles.WorkIcon}/>
+          <IoMdInformationCircleOutline title="About us" id={styles.InformationIcon}/>
         </div>
       </div>
       <div id={styles.MainText}>
         <h1>What are you thinking about?</h1>
         <form onSubmit={inputSubmit} id={styles.InputForm}       >
           <input id={styles.MainInput}  value={task} onChange={inputChange} onKeyPress={handleKeyPress} placeholder="Write here"></input>
-          <button id={styles.AttachButton}><IoDocumentAttachOutline /></button>
+          <button onClick={attachClick} title="It isn't available now" id={styles.AttachButton}><IoDocumentAttachOutline /></button>
           <button id={styles.UploadButton}>Upload</button>
         </form>
         <p id={styles.save}>They won't save in our service</p>

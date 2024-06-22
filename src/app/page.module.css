@@ -109,6 +109,13 @@
     border-radius: 5px;
     margin: 3vh;
 }
+#WorkIcon{
+    font-size: 7vh;
+    padding: 1.5vh;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3vh;
+}
 #SearchIcon{
     font-size: 7vh;
     padding: 1.5vh;
@@ -131,9 +138,7 @@
     margin-left: 2vh;
     border-radius: 15px;
     background-color: white;
-}
-#AttachIcon{
-    font-size: 3vh;
+    opacity: 0.5;
 }
 #LinkColor{
     color: black;
