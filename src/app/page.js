@@ -8,6 +8,7 @@ import { MdAttachMoney } from "react-icons/md";
 import { MdOutlineManageSearch } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import { IoDocumentAttachOutline } from "react-icons/io5";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 
 export default function Home() {
   
@@ -63,6 +64,7 @@ const [task, setTask] = useState('');
           <MdAccountCircle id={styles.AccountIcon}/>
           <MdLibraryMusic id={styles.MusicIcon}/>
           <MdAttachMoney id={styles.MoneyIcon}/>
+          <IoMdInformationCircleOutline id={styles.InformationIcon}/>
         </div>
       </div>
       <div id={styles.MainText}>
