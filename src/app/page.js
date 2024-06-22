@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { MdAccountCircle } from "react-icons/md";
-import { MdQueueMusic } from "react-icons/md";
-import { MdExplore } from "react-icons/md";
-import { MdSearch } from "react-icons/md";
+import { MdLibraryMusic } from "react-icons/md";
+import { MdAttachMoney } from "react-icons/md";
+import { MdOutlineManageSearch } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import { IoDocumentAttachOutline } from "react-icons/io5";
 
@@ -59,7 +59,10 @@ const [task, setTask] = useState('');
           <p id={styles.beta}>Beta</p>
         </div>
         <div>
-          
+          <MdOutlineManageSearch id={styles.SearchIcon}/>
+          <MdAccountCircle id={styles.AccountIcon}/>
+          <MdLibraryMusic id={styles.MusicIcon}/>
+          <MdAttachMoney id={styles.MoneyIcon}/>
         </div>
       </div>
       <div id={styles.MainText}>

@@ -16,6 +16,10 @@
     margin-top: 5vh;
     border-radius: 15px;
 }
+#FirstDiv{
+    display: flex;
+    justify-content: space-between;
+}
 #OtherTitle{
     color: gray;
     margin-left: 10vh;
@@ -77,11 +81,33 @@
     color: gray;
     margin-top: 2vh;
 }
-#ExploreIcon{
-    font-size: 5vh;
+#MoneyIcon{
+    font-size: 7vh;
+    padding: 1.5vh;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3vh;
+}
+#MusicIcon{
+    font-size: 7vh;
+    padding: 1.5vh;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3vh;
+}
+#AccountIcon{
+    font-size: 7vh;
+    padding: 1.5vh;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3vh;
 }
 #SearchIcon{
-    font-size: 5vh;
+    font-size: 7vh;
+    padding: 1.5vh;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3vh;
 }
 #UploadButton{
     height: auto;
